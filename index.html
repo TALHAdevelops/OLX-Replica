@@ -1,12 +1,624 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OLX Talha</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="nav-left">
+        <div class="logo">
+          <img
+            src="./images/logo.svg"
+            alt="olx logo"
+            width="100px"
+            height="50px"
+          />
+        </div>
+        <div
+          style="display: flex; justify-content: center; align-items: center"
+        >
+          <img src="./images/cars.png" alt="" width="60px" height="30px" />
+          <a href=""><h4>Motors</h4></a>
+        </div>
+        <div
+          style="display: flex; justify-content: center; align-items: center"
+        >
+          <img src="./images/property.png" alt="" width="60px" height="40px" />
+          <a href=""><h4>Property</h4></a>
+        </div>
+      </div>
+      <div class="nav-right">
+        <a href="">Login</a>
+        <button class="nav-butt">+ SELL</button>
+      </div>
+    </div>
+
+    <div class="Selectors">
+      <div class="select1">
+        <img
+          src="./images/loc_icon.svg"
+          alt=""
+          width="20px"
+          height="20px"
+          style="margin-left: 2px; margin-bottom: -3px"
+        />
+        <select name="location" id="location">
+          <option value="Karachi">Pakistan</option>
+          <option value="Lahore">Lahore</option>
+          <option value="Islamabad">Islamabad</option>
+          <option value="Faisalabad">Faisalabad</option>
+          <option value="Multan">Multan</option>
+        </select>
+      </div>
+      <div class="select2">
+        <label for="search box">
+          <input
+            type="search"
+            class="search-box"
+            placeholder="Find Cars, Mobile Phones and more..."
+          />
+          <button class="search-button">Search</button>
+        </label>
+      </div>
+    </div>
+
+    <hr />
+    <div class="Categories">
+      <select name="categories" id="categories">
+        <option value="All Categories">All Categories</option>
+      </select>
+      <a href="">Mobile Phones</a>
+      <a href="">Cars</a>
+      <a href="">Motorcycles</a>
+      <a href="">Houses</a>
+      <a href="">Videos-Audios</a>
+      <a href="">Tablets</a>
+      <a href="">Land & Plots</a>
+    </div>
+    <br />
+    <br />
+    <br />
+    <div class="ads">
+      <img
+        src="./images/ads.webp"
+        alt=""
+        width="98%"
+        style="border-radius: 7px"
+      />
+    </div>
+
+    <div class="categories2">
+      <div>
+        <img src="./images/c1.png" alt="" width="80px" height="80px" />
+        <br />
+        <h4>Mobile Phones</h4>
+      </div>
+      <div>
+        <img src="./images/c2.png" alt="" width="80px" height="80px" />
+        <br />
+        <h4>Cars</h4>
+      </div>
+      <div>
+        <img src="./images/c3.png" alt="" width="80px" height="80px" />
+        <br />
+        <h4>Property for Sale</h4>
+      </div>
+      <div>
+        <img src="./images/c4.png" alt="" width="80px" height="80px" />
+        <br />
+        <h4>Property for Rent</h4>
+      </div>
+      <div>
+        <img src="./images/c5.png" alt="" width="80px" height="80px" />
+        <br />
+        <h4>
+          Electronics <br />
+          & Home...
+        </h4>
+      </div>
+      <div>
+        <img src="./images/c6.png" alt="" width="80px" height="80px" />
+        <br />
+        <h4>Bikes</h4>
+      </div>
+      <div>
+        <img src="./images/c7.png" alt="" width="80px" height="80px" />
+        <br />
+        <h4>Business,<br />Industrial &...</h4>
+      </div>
+      <div>
+        <img src="./images/c8.png" alt="" width="80px" height="80px" />
+        <br />
+        <h4>Services</h4>
+      </div>
+      <div>
+        <img src="./images/c9.png" alt="" width="80px" height="80px" />
+        <br />
+        <h4>Jobs</h4>
+      </div>
+      <div>
+        <img src="./images/c10.png" alt="" width="80px" height="80px" />
+        <br />
+        <h4>Animals</h4>
+      </div>
+      <div>
+        <img src="./images/c11.png" alt="" width="80px" height="80px" />
+        <br />
+        <h4>Furniture & <br />Home Decor</h4>
+      </div>
+      <div>
+        <img src="./images/c12.png" alt="" width="80px" height="80px" />
+        <br />
+        <h4>Fashion & Beauty</h4>
+      </div>
+      <div>
+        <img src="./images/c13.png" alt="" width="80px" height="80px" />
+        <br />
+        <h4>Books, Sports <br />&Hobbies</h4>
+      </div>
+      <div>
+        <img src="./images/c14.png" alt="" width="80px" height="80px" />
+        <br />
+        <h4>Kids</h4>
+      </div>
+    </div>
+
+    <div class="items">
+        <div class="i1">
+            <div class="labels">
+                <h2>Mobile Phones</h2>
+                <a href="" class="link">View More</a>
+            </div>
+            <br>
+            <div class="i-cards">
+              <div class="card">
+                <div class="card-img">
+                  <img src="./images/cimg1.png" alt="">
+                </div>
+                <div class="card-content">
+                    <span>Rs 1.4 lac</span>
+                    <img src="./images/heart.png" alt="" width="20px" height="20px" align="right">
+                  <br>
+                  <br>
+        
+                  <p>Samsung S24 8/128 Approved</p>
+                  <br>
+                  <div class="caption">
+                    Model Town Link Road, Lahore
+                  </div>
+                  <div class="time">4 days ago</div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-img">
+                  <img src="./images/l2.png" alt="">
+                </div>
+                <div class="card-content">
+                    <span>Rs 1.8 lac</span>
+                    <img src="./images/heart.png" alt="" width="20px" height="20px" align="right">
+                  <br>
+                  <br>
+        
+                  <p>Samsung S23 FE | PTA | 256GB</p>
+                  <br>
+                  <div class="caption">
+                    Johar Town, Lahore
+                  </div>
+                  <div class="time">14 days ago</div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-img">
+                  <img src="./images/l3.png" alt="">
+                </div>
+                <div class="card-content">
+                    <span>Rs 80k - 100k</span>
+                    <img src="./images/heart.png" alt="" width="20px" height="20px" align="right">
+                  <br>
+                  <br>
+        
+                  <p>All Second-Hand Mobile Available</p>
+                  <br>
+                  <div class="caption">
+                    DHA phase-IV, Karachi
+                  </div>
+                  <div class="time">6 hours ago</div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-img">
+                  <img src="./images/l4.png" alt="">
+                </div>
+                <div class="card-content">
+                    <span>Rs 1.0 lac</span>
+                    <img src="./images/heart.png" alt="" width="20px" height="20px" align="right">
+                  <br>
+                  <br>
+        
+                  <p>Google pixel NEW</p>
+                  <br>
+                  <div class="caption">
+                    Model Town Link Road, Lahore
+                  </div>
+                  <div class="time">4 days ago</div>
+                </div>
+              </div>
+              <br>
+            </div>
+            </div>
+
+<br>
+<br>
+
+                    <div class="i2">
+            <div class="labels">
+                <h2>Cars</h2>
+                <a href="" class="link">View More</a>
+            </div>
+            <br>
+            <div class="i-cards">
+              <div class="card">
+                <div class="card-img">
+                  <img src="./images/car1.png" alt="">
+                </div>
+                <div class="card-content">
+                    <span>Rs 19.4 lac</span>
+                    <img src="./images/heart.png" alt="" width="20px" height="20px" align="right">
+                  <br>
+                  <br>
+        
+                  <p>Honda Mini Car</p>
+                  <br>
+                  <div class="caption">
+                    Model Town Link Road, Lahore
+                  </div>
+                  <div class="time">4 days ago</div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-img">
+                  <img src="./images/car2.png" alt="">
+                </div>
+                <div class="card-content">
+                    <span>Rs 1.8 Cr</span>
+                    <img src="./images/heart.png" alt="" width="20px" height="20px" align="right">
+                  <br>
+                  <br>
+        
+                  <p>Toyota Fortuner</p>
+                  <br>
+                  <div class="caption">
+                    Johar Town, Lahore
+                  </div>
+                  <div class="time">14 days ago</div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-img">
+                  <img src="./images/car3.png" alt="">
+                </div>
+                <div class="card-content">
+                    <span>Rs 34 lac</span>
+                    <img src="./images/heart.png" alt="" width="20px" height="20px" align="right">
+                  <br>
+                  <br>
+        
+                  <p>Toyota Vitz Great Condition</p>
+                  <br>
+                  <div class="caption">
+                    DHA phase-IV, Karachi
+                  </div>
+                  <div class="time">6 hours ago</div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-img">
+                  <img src="./images/car4.png" alt="">
+                </div>
+                <div class="card-content">
+                    <span>Rs 51 lac</span>
+                    <img src="./images/heart.png" alt="" width="20px" height="20px" align="right">
+                  <br>
+                  <br>
+        
+                  <p>Old Toyota 2012</p>
+                  <br>
+                  <div class="caption">
+                    Gulistan-e-Jauhar, Karachi
+                  </div>
+                  <div class="time">20 minutes ago</div>
+                </div>
+              </div>
+              <br>
+            </div>
+            </div>
+
+
+
+
+            <br>
+            <br>
+
+
+
+
+                    <div class="i3">
+            <div class="labels">
+                <h2>Bikes & Motorcycles</h2>
+                <a href="" class="link">View More</a>
+            </div>
+            <br>
+            <div class="i-cards">
+              <div class="card">
+                <div class="card-img">
+                  <img src="./images/b1.png" alt="">
+                </div>
+                <div class="card-content">
+                    <span>Rs 11.5 lac</span>
+                    <img src="./images/heart.png" alt="" width="20px" height="20px" align="right">
+                  <br>
+                  <br>
+        
+                  <p>BMW S1000 RR MODEL 2024</p>
+                  <br>
+                  <div class="caption">
+                    Model Colony, karachi
+                  </div>
+                  <div class="time">3 weeks ago</div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-img">
+                  <img src="./images/b3.png" alt="">
+                </div>
+                <div class="card-content">
+                    <span>Rs 2.64 lac</span>
+                    <img src="./images/heart.png" alt="" width="20px" height="20px" align="right">
+                  <br>
+                  <br>
+        
+                  <p>Jolta AERO & SCOOTY 2025</p>
+                  <br>
+                  <div class="caption">
+                    Saddar, Rawalpindi
+                  </div>
+                  <div class="time">2 weeks ago</div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-img">
+                  <img src="./images/b4.png" alt="">
+                </div>
+                <div class="card-content">
+                    <span>Rs 1.87 lac</span>
+                    <img src="./images/heart.png" alt="" width="20px" height="20px" align="right">
+                  <br>
+                  <br>
+        
+                  <p>Honda CG 125cc 23Model</p>
+                  <br>
+                  <div class="caption">
+                    liaquat Bagh,rawalpindi
+                  </div>
+                  <div class="time">3 weeks ago</div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-img">
+                  <img src="./images/b2.png" alt="">
+                </div>
+                <div class="card-content">
+                    <span>Rs 5.9 lac</span>
+                    <img src="./images/heart.png" alt="" width="20px" height="20px" align="right">
+                  <br>
+                  <br>
+        
+                  <p>250cc raplica Heavy Bike </p>
+                  <br>
+                  <div class="caption">
+                    University Road, Sarghoda
+                  </div>
+                  <div class="time">15 hours ago</div>
+                </div>
+              </div>
+              <br>
+            </div>
+            </div>
+
+
+<br>
+<br>
+
+
+
+                    <div class="i4">
+            <div class="labels">
+                <h2>Lands & Plots</h2>
+                <a href="" class="link">View More</a>
+            </div>
+            <br>
+            <div class="i-cards">
+              <div class="card">
+                <div class="card-img">
+                  <img src="./images/lp1.png" alt="">
+                </div>
+                <div class="card-content">
+                    <span>Rs 1.5 Cr</span>
+                    <img src="./images/heart.png" alt="" width="20px" height="20px" align="right">
+                  <br>
+                  <br>
+        
+                  <p>5 Marla Plot in Mutli-Gardens</p>
+                  <br>
+                  <div class="caption">
+                    Mutli-Gardens, Islamabad
+                  </div>
+                  <div class="time">3 weeks ago</div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-img">
+                  <img src="./images/lp2.png" alt="">
+                </div>
+                <div class="card-content">
+                    <span>Rs 2.64 lac</span>
+                    <img src="./images/heart.png" alt="" width="20px" height="20px" align="right">
+                  <br>
+                  <br>
+        
+                  <p>120 Gz Plot available </p>
+                  <br>
+                  <div class="caption">
+                    Saddar, Rawalpindi
+                  </div>
+                  <div class="time">2 weeks ago</div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-img">
+                  <img src="./images/lp3.png" alt="">
+                </div>
+                <div class="card-content">
+                    <span>Rs 1.87 Cr</span>
+                    <img src="./images/heart.png" alt="" width="20px" height="20px" align="right">
+                  <br>
+                  <br>
+        
+                  <p>125-Yard Plot In DHA City Karachi</p>
+                  <br>
+                  <div class="caption">
+                    DHA City, Karachi
+                  </div>
+                  <div class="time">3 weeks ago</div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-img">
+                  <img src="./images/lp4.png" alt="">
+                </div>
+                <div class="card-content">
+                    <span>Rs 5.9 lac</span>
+                    <img src="./images/heart.png" alt="" width="20px" height="20px" align="right">
+                  <br>
+                  <br>
+        
+                  <p>U-2031 PHASE 7 POSSESSION PLOT FOR SALE 10 MARLA</p>
+                  <br>
+                  <div class="caption">
+                    G sector, Islamabad
+                  </div>
+                  <div class="time">15 hours ago</div>
+                </div>
+              </div>
+              <br>
+            </div>
+            </div>
+        </div>
+
+        <div class="download">
+          <div style="padding-top: 50px; padding-left: 20px;">
+            <h2>Find Amazing deals on the go.</h2>
+            <br>
+            <h2 style="color: #3A77FF;">Download OLX app now!</h2>
+          </div>
+          <div>
+            <img src="./images/Screenshot 2025-06-03 144312.png" alt=""/>
+          </div>
+          <div style="display: flex; justify-content: center; align-items: center; gap: 2px;">
+            <img src="./images/appstore.svg" alt="" width="150px" height="50px">
+            <img src="./images/playstore.svg" alt="" width="150px" height="50px">
+            <img src="./images/appgallery.svg" alt="" width="150px" height="50px">
+          </div>
+        </div>
+        <hr>
+        <div class="footer">
+          <div>
+            <h4 class="f-head">Popular Categories</h4>
+            <br>
+            <br>
+
+            <a href="" class="f-links">Cars</a>
+            <br>
+            
+            <a href="" class="f-links">Flats for rent</a>
+            <br>
+            
+            <a href="" class="f-links">Mobile Phones</a>
+            <br>
+           
+            <a href="" class="f-links">Jobs</a>
+          </div>
+
+
+          <div>
+             <h4 class="f-head">Trending Searches</h4>
+            <br>
+            <br>
+
+            <a href="" class="f-links">Bikes</a>
+            <br>
+            
+            <a href="" class="f-links">Watches</a>
+            <br>
+            
+            <a href="" class="f-links">Books</a>
+            <br>
+           
+            <a href="" class="f-links">Dogs</a>
+          </div>
+
+
+
+          <div>
+             <h4 class="f-head">About Us</h4>
+            <br>
+            <br>
+
+            <a href="" class="f-links">About Dubizzle Group</a>
+            <br>
+            
+            <a href="" class="f-links">OLX Blog</a>
+            <br>
+            
+            <a href="" class="f-links">Contact Us</a>
+            <br>
+           
+            <a href="" class="f-links">OLX for Businesses</a>
+          </div>
+
+
+          <div>
+             <h4 class="f-head">OLX</h4>
+            <br>
+            <br>
+
+            <a href="" class="f-links">Help</a>
+            <br>
+            
+            <a href="" class="f-links">Sitemap</a>
+            <br>
+            
+            <a href="" class="f-links">Terms of use</a>
+            <br>
+           
+            <a href="" class="f-links">Privacy Policy</a>
+          </div>
+          <div class="social">
+            <h4>  Follow us on:</h4>
+            <br>
+            <br>
+            <img src="./images/fb.png" alt="" width="30px" height="30px">
+            <img src="./images/insta.png" alt="" width="30px" height="30px">
+            <img src="./images/linkedin.png" alt="" width="30px" height="30px">
+            <img src="./images/github.png" alt="" width="30px" height="30px">
+        
+          </div>
+        </div>
+        <div class="copyright">
+          <p><span style="font-weight: bolder;">© 2025 OLX Talha.</span> All rights reserved.</p>
+        </div>
+  </body>
 </html>
